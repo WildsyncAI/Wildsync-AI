@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wildsync AI – Wildlife Tracking Reinvented</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     body, html {
       margin: 0;
@@ -14,7 +15,7 @@
     }
 
     .hero {
-      height: 150vh; /* Make it tall to show scroll expansion */
+      height: 150vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -23,7 +24,7 @@
       background-image: url('https://res.cloudinary.com/dvtjvpybt/image/upload/w_2000,h_2000,c_fit,g_center/v1744488949/ChatGPT_Image_Apr_12_2025_11_30_28_AM_1_v5e2lt.png');
       background-size: cover;
       background-position: center;
-      background-attachment: fixed; /* This makes it scroll-expand */
+      background-attachment: fixed;
       padding: 100px 20px;
       position: relative;
     }
@@ -96,18 +97,18 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <h1>Welcome to Wildsync AI</h1>
-      <p>Revolutionizing wildlife conservation with AI-powered, non-invasive animal tracking.</p>
-      <a href="learn-more.html" class="btn btn-outline-light mt-4">Learn More</a>
+    <div class="container hero-content" data-aos="fade-up" data-aos-duration="1500">
+      <h1 data-aos="fade-up">Welcome to Wildsync AI</h1>
+      <p data-aos="fade-up" data-aos-delay="200">Revolutionizing wildlife conservation with AI-powered, non-invasive animal tracking.</p>
+      <a href="learn-more.html" class="btn btn-outline-light mt-4" data-aos="zoom-in" data-aos-delay="400">Learn More</a>
     </div>
   </section>
 
   <!-- About Section -->
   <section id="about" class="py-5">
     <div class="container text-center">
-      <h2 class="fw-bold mb-4">About Wildsync AI</h2>
-      <p class="lead">
+      <h2 class="fw-bold mb-4" data-aos="fade-up">About Wildsync AI</h2>
+      <p class="lead" data-aos="fade-up" data-aos-delay="150">
         Founded by Kavan Faulkner, Wildsync AI combines cutting-edge artificial intelligence with a mission to protect and preserve wildlife. By using image and sound recognition, we track animals in real time without chips or tranquilizers—offering a humane, efficient, and scalable conservation solution.
       </p>
     </div>
@@ -121,7 +122,11 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
+  <!-- JS Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
