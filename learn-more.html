@@ -8,11 +8,14 @@
 </head>
 <body>
 
-  <!-- Top Bar (like Apple's) -->
+  <!-- Top Bar Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Wildsync AI</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="https://i.ibb.co/0w3tmDY/your-logo.png" alt="Wildsync AI Logo" style="height: 40px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -21,14 +24,16 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="learn-more.html">Learn More</a>
+            <a class="nav-link active" aria-current="page" href="learn-more.html">Learn More</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
-          <!-- Search Bar -->
           <li class="nav-item">
-            <form class="d-flex">
+            <a class="nav-link" href="feedback.html">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <form class="d-flex ms-3">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
@@ -55,7 +60,7 @@
   </div>
 
   <!-- Footer -->
-  <footer class="text-center bg-dark text-white py-3">
+  <footer class="text-center bg-dark text-white py-3 mt-5">
     <div class="container">
       <p class="mb-0">© 2025 Wildsync AI. All rights reserved.</p>
       <small>Built by Kavan Faulkner</small>
